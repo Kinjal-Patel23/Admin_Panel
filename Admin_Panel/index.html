@@ -758,7 +758,7 @@
                             <div id="chartContainer" class="flex items-center justify-center">
                               <canvas id="myChart"></canvas>
                             </div>
-                          </div>
+                        </div>
                     </div>
                     <div class="card-2 w-full md:w-[253px] h-[130px] border border-[#373737] rounded-[4px] bg-[#1F1F1F] flex items-center justify-center">
                         <div class="paidVisits-1 w-[119px] h-[88px] ml-[15px]">
@@ -903,12 +903,12 @@
                         <div class="device w-full md:w-[253px] h-[401px] bg-[#1F1F1F] border border-[#373737] rounded-[4px] flex flex-col items-center justify-center gap-4">
                             <div class="ttlDevice w-[211px] h-[24px]">
                                 <p class="text-[16px] font-bold text-[#fffc]">Users By Device</p>
-                              </div>
-                              <div class="chartDevice w-[211px] h-[312px]">
+                            </div>
+                            <div class="chartDevice w-[211px] h-[312px]">
                                 <div id="chartContainer-3" class="flex items-center justify-center">
                                   <div id="chart"></div> <!-- This is where the chart will be rendered -->
                                 </div>
-                              </div>
+                            </div>
                         </div> 
                     </div>
                 </div>
@@ -921,8 +921,8 @@
                     <div class="performing w-full md:w-[522px] h-[402px] bg-[#1F1F1F] border border-[#373737] rounded-[4px] flex flex-col items-center justify-center gap-4">
                         <div class="ttlPerforming w-[480px] h-[24px]">
                             <p class="text-[16px] font-bold text-[#fffc]">Top Performing Pages</p>
-                          </div>
-                          <div class="tablePerforming w-[480px] h-[320px]">
+                        </div>
+                        <div class="tablePerforming w-[480px] h-[320px]">
                             <table class="w-[100%] h-[300px]">
                               <tr class="text-left bg-[#2A2A2A] text-[white] text-[14px] py-[12px] px-[15px]">
                                 <th class="pl-[10px]">Page name</th>
@@ -960,7 +960,7 @@
                                 <td>123</td>
                               </tr>
                             </table>
-                          </div>
+                        </div>
                     </div>
                     <div class="countries w-full md:w-[522px] h-[402px] bg-[#1F1F1F] border border-[#373737] rounded-[4px] flex flex-col items-center justify-center gap-4">
                         <div class="ttlCountries w-[480px] h-[24px]">
@@ -1067,12 +1067,11 @@
 
     // ------CHART - 1 -------
 
-document.addEventListener('DOMContentLoaded', function () {
-      var ctx = document.getElementById('myChart').getContext('2d');
+    var ctx = $('#myChart')[0].getContext('2d');
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'Octomber'],
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October'],
           datasets: [{
             label: 'Monthly Data',
             backgroundColor: 'rgba(0, 0, 0, 0)', // No fill
@@ -1110,16 +1109,14 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         }
       });
-    });
 
     // ------CHART - 2 -------
 
-document.addEventListener('DOMContentLoaded', function () {
-      var ctx = document.getElementById('myChart-2').getContext('2d');
+    var ctx = $('#myChart-2')[0].getContext('2d');
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'Octomber'],
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October'],
           datasets: [{
             label: 'Monthly Data',
             backgroundColor: 'rgba(0, 0, 0, 0)', // No fill
@@ -1157,16 +1154,13 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         }
       });
-    });
-
     // ------CHART - 3 -------
 
-document.addEventListener('DOMContentLoaded', function () {
-      var ctx = document.getElementById('myChart-3').getContext('2d');
+    var ctx = $('#myChart-3')[0].getContext('2d');
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'Octomber'],
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October'],
           datasets: [{
             label: 'Monthly Data',
             backgroundColor: 'rgba(0, 0, 0, 0)', // No fill
@@ -1204,16 +1198,14 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         }
       });
-    });
 
     // ------CHART - 4 -------
 
-document.addEventListener('DOMContentLoaded', function () {
-      var ctx = document.getElementById('myChart-4').getContext('2d');
+    var ctx = $('#myChart-4')[0].getContext('2d');
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'Octomber'],
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October'],
           datasets: [{
             label: 'Monthly Data',
             backgroundColor: 'rgba(0, 0, 0, 0)', // No fill
@@ -1251,12 +1243,10 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         }
       });
-    });
 
     // ------CHART - 5 -------
 
-    document.addEventListener('DOMContentLoaded', function () {
-      var ctx = document.getElementById('myChart-5').getContext('2d');
+    var ctx = $('#myChart-5')[0].getContext('2d');
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -1295,42 +1285,39 @@ document.addEventListener('DOMContentLoaded', function () {
             }
           },
           scales: {
-                x: {
-    display: true, // Show x-axis
-    grid: {
-      display: false, // Hide x-axis grid lines
-    },
-    ticks: {
-      display: true, // Display x-axis labels
-      color: 'white' // Set color to white
-    }
-  },
-  y: {
-    display: true, // Show y-axis
-    grid: {
-      display: true, // Show y-axis grid lines
-      borderDash: [5, 5] // Dashed grid lines
-    },
-    min: 0, // Start at 0
-    max: 15, // End at 15
-    ticks: {
-      stepSize: 3, // Set step size to 3
-      callback: function(value) {
-        return value + 'm'; // Add 'm' to the y-axis labels
-      },
-      color: 'white', // Set color to white
-      maxTicksLimit: 6 // Limit to 6 labels (this can be removed as stepSize is set)
-    }
-  }
-}
-
+            x: {
+              display: true, // Show x-axis
+              grid: {
+                display: false // Hide x-axis grid lines
+              },
+              ticks: {
+                display: true, // Display x-axis labels
+                color: 'white' // Set color to white
+              }
+            },
+            y: {
+              display: true, // Show y-axis
+              grid: {
+                display: true, // Show y-axis grid lines
+                borderDash: [5, 5] // Dashed grid lines
+              },
+              min: 0, // Start at 0
+              max: 15, // End at 15
+              ticks: {
+                stepSize: 3, // Set step size to 3
+                callback: function(value) {
+                  return value + 'm'; // Add 'm' to the y-axis labels
+                },
+                color: 'white', // Set color to white
+                maxTicksLimit: 6 // Limit to 6 labels (this can be removed as stepSize is set)
+              }
+            }
+          }
         }
       });
-    });
 
     // ------CHART - 6 -------   
 
- document.addEventListener('DOMContentLoaded', function () {
       var options = {
         series: [76, 67, 61], // Only 3 values
         chart: {
@@ -1385,7 +1372,7 @@ document.addEventListener('DOMContentLoaded', function () {
           breakpoint: 480,
           options: {
             legend: {
-                show: false
+              show: false
             }
           }
         }]
@@ -1393,6 +1380,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
       var chart = new ApexCharts(document.querySelector("#chart"), options);
       chart.render();
-    });
 </script>
 </html>
